@@ -1,0 +1,1393 @@
+<html>
+<head>
+
+    <style>
+
+
+
+/* ##### GENERAL ELEMENTS DEFAULT ####*/
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #4232c2;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #4232c2;
+    --bs-secondary: #6266ea;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f6f9fe;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+  
+  /* line 16, src/assets/scss/_reboot.scss */
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    /* line 28, src/assets/scss/_reboot.scss */
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  /* line 46, src/assets/scss/_reboot.scss */
+  body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  /* line 69, src/assets/scss/_reboot.scss */
+  [tabindex="-1"]:focus:not(:focus-visible) {
+    outline: 0 !important;
+  }
+  
+  /* line 79, src/assets/scss/_reboot.scss */
+  hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+  }
+  
+  /* line 87, src/assets/scss/_reboot.scss */
+  hr:not([size]) {
+    height: 1px;
+  }
+  
+  /* line 98, src/assets/scss/_reboot.scss */
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  /* line 108, src/assets/scss/_reboot.scss */
+  h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 108, src/assets/scss/_reboot.scss */
+    h1, .h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* line 113, src/assets/scss/_reboot.scss */
+  h2, .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 113, src/assets/scss/_reboot.scss */
+    h2, .h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* line 118, src/assets/scss/_reboot.scss */
+  h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 118, src/assets/scss/_reboot.scss */
+    h3, .h3 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* line 123, src/assets/scss/_reboot.scss */
+  h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 123, src/assets/scss/_reboot.scss */
+    h4, .h4 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* line 128, src/assets/scss/_reboot.scss */
+  h5, .h5 {
+    font-size: 1.25rem;
+  }
+  
+  /* line 133, src/assets/scss/_reboot.scss */
+  h6, .h6 {
+    font-size: 1rem;
+  }
+  
+  /* line 144, src/assets/scss/_reboot.scss */
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  /* line 157, src/assets/scss/_reboot.scss */
+  abbr[title],
+  abbr[data-bs-original-title] {
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+    cursor: help;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+
+  
+  /* line 168, src/assets/scss/_reboot.scss */
+  address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+  }
+  
+  /* line 177, src/assets/scss/_reboot.scss */
+  ol,
+  ul {
+    padding-left: 2rem;
+  }
+  
+  /* line 182, src/assets/scss/_reboot.scss */
+  ol,
+  ul,
+  dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  /* line 189, src/assets/scss/_reboot.scss */
+  ol ol,
+  ul ul,
+  ol ul,
+  ul ol {
+    margin-bottom: 0;
+  }
+  
+  /* line 196, src/assets/scss/_reboot.scss */
+  dt {
+    font-weight: 700;
+  }
+  
+  /* line 202, src/assets/scss/_reboot.scss */
+  dd {
+    margin-bottom: .5rem;
+    margin-left: 0;
+  }
+  
+  /* line 210, src/assets/scss/_reboot.scss */
+  blockquote {
+    margin: 0 0 1rem;
+  }
+  
+  /* line 219, src/assets/scss/_reboot.scss */
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /* line 229, src/assets/scss/_reboot.scss */
+  small, .small {
+    font-size: 0.875em;
+  }
+  
+  /* line 236, src/assets/scss/_reboot.scss */
+  mark, .mark {
+    padding: 0.2em;
+    background-color: #fcf8e3;
+  }
+  
+  /* line 247, src/assets/scss/_reboot.scss */
+  sub,
+  sup {
+    position: relative;
+    font-size: 0.75em;
+    line-height: 0;
+    vertical-align: baseline;
+  }
+  
+  /* line 255, src/assets/scss/_reboot.scss */
+  sub {
+    bottom: -.25em;
+  }
+  
+  /* line 256, src/assets/scss/_reboot.scss */
+  sup {
+    top: -.5em;
+  }
+  
+  /* line 261, src/assets/scss/_reboot.scss */
+  a {
+    color: #4232c2;
+    text-decoration: underline;
+  }
+  
+  /* line 265, src/assets/scss/_reboot.scss */
+  a:hover {
+    color: #35289b;
+  }
+  
+  /* line 277, src/assets/scss/_reboot.scss */
+  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* line 287, src/assets/scss/_reboot.scss */
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: var(--bs-font-monospace);
+    font-size: 1em;
+    direction: ltr /* rtl:ignore */;
+    unicode-bidi: bidi-override;
+  }
+  
+  /* line 301, src/assets/scss/_reboot.scss */
+  pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: auto;
+    font-size: 0.875em;
+  }
+  
+  /* line 310, src/assets/scss/_reboot.scss */
+  pre code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal;
+  }
+  
+  /* line 317, src/assets/scss/_reboot.scss */
+  code {
+    font-size: 0.875em;
+    color: #d63384;
+    word-wrap: break-word;
+  }
+  
+  /* line 323, src/assets/scss/_reboot.scss */
+  a > code {
+    color: inherit;
+  }
+  
+  /* line 328, src/assets/scss/_reboot.scss */
+  kbd {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.875em;
+    color: #fff;
+    background-color: #212529;
+    border-radius: 0.2rem;
+  }
+  
+  /* line 335, src/assets/scss/_reboot.scss */
+  kbd kbd {
+    padding: 0;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  /* line 347, src/assets/scss/_reboot.scss */
+  figure {
+    margin: 0 0 1rem;
+  }
+  
+  /* line 354, src/assets/scss/_reboot.scss */
+  img,
+  svg {
+    vertical-align: middle;
+  }
+  
+  /* line 364, src/assets/scss/_reboot.scss */
+  table {
+    caption-side: bottom;
+    border-collapse: collapse;
+  }
+  
+  /* line 369, src/assets/scss/_reboot.scss */
+  caption {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #6c757d;
+    text-align: left;
+  }
+  
+  /* line 380, src/assets/scss/_reboot.scss */
+  th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+  }
+  
+  /* line 386, src/assets/scss/_reboot.scss */
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+  }
+  
+  /* line 402, src/assets/scss/_reboot.scss */
+  label {
+    display: inline-block;
+  }
+  
+  /* line 409, src/assets/scss/_reboot.scss */
+  button {
+    border-radius: 0;
+  }
+  
+  /* line 418, src/assets/scss/_reboot.scss */
+  button:focus {
+    outline: dotted 1px;
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+  
+  /* line 425, src/assets/scss/_reboot.scss */
+  input,
+  button,
+  select,
+  optgroup,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  /* line 438, src/assets/scss/_reboot.scss */
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  /* line 446, src/assets/scss/_reboot.scss */
+  [role="button"] {
+    cursor: pointer;
+  }
+  
+  /* line 453, src/assets/scss/_reboot.scss */
+  select {
+    word-wrap: normal;
+  }
+  
+  /* line 460, src/assets/scss/_reboot.scss */
+  [list]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  
+  /* line 469, src/assets/scss/_reboot.scss */
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /* line 476, src/assets/scss/_reboot.scss */
+  button:not(:disabled),
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
+    cursor: pointer;
+  }
+  
+  /* line 484, src/assets/scss/_reboot.scss */
+  ::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
+  
+  /* line 491, src/assets/scss/_reboot.scss */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* line 502, src/assets/scss/_reboot.scss */
+  fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  /* line 514, src/assets/scss/_reboot.scss */
+  legend {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: calc(1.275rem + 0.3vw);
+    line-height: inherit;
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 514, src/assets/scss/_reboot.scss */
+    legend {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* line 523, src/assets/scss/_reboot.scss */
+  legend + * {
+    clear: left;
+  }
+  
+  /* line 531, src/assets/scss/_reboot.scss */
+  ::-webkit-datetime-edit-fields-wrapper,
+  ::-webkit-datetime-edit-text,
+  ::-webkit-datetime-edit-minute,
+  ::-webkit-datetime-edit-hour-field,
+  ::-webkit-datetime-edit-day-field,
+  ::-webkit-datetime-edit-month-field,
+  ::-webkit-datetime-edit-year-field {
+    padding: 0;
+  }
+  
+  /* line 541, src/assets/scss/_reboot.scss */
+  ::-webkit-inner-spin-button {
+    height: auto;
+  }
+  
+  /* line 551, src/assets/scss/_reboot.scss */
+  [type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: textfield;
+  }
+  
+  /* rtl:raw:
+  [type="tel"],
+  [type="url"],
+  [type="email"],
+  [type="number"] {
+    direction: ltr;
+  }
+  */
+  /* line 572, src/assets/scss/_reboot.scss */
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /* line 578, src/assets/scss/_reboot.scss */
+  ::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  /* line 586, src/assets/scss/_reboot.scss */
+  ::file-selector-button {
+    font: inherit;
+  }
+  
+  /* line 593, src/assets/scss/_reboot.scss */
+  ::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+  }
+  
+  /* line 600, src/assets/scss/_reboot.scss */
+  output {
+    display: inline-block;
+  }
+  
+  /* line 606, src/assets/scss/_reboot.scss */
+  iframe {
+    border: 0;
+  }
+  
+  /* line 614, src/assets/scss/_reboot.scss */
+  summary {
+    display: list-item;
+    cursor: pointer;
+  }
+  
+  /* line 624, src/assets/scss/_reboot.scss */
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /* line 633, src/assets/scss/_reboot.scss */
+  [hidden] {
+    display: none !important;
+  }
+
+/* ##### GENERAL CONTAINERS ############ */
+
+  /* line 29, src/assets/scss/_type.scss */
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  /* line 36, src/assets/scss/_type.scss */
+  .display-1 {
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 36, src/assets/scss/_type.scss */
+    .display-1 {
+      font-size: 5rem;
+    }
+  }
+  
+  /* line 36, src/assets/scss/_type.scss */
+  .display-2 {
+    font-size: calc(1.575rem + 3.9vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 36, src/assets/scss/_type.scss */
+    .display-2 {
+      font-size: 4.5rem;
+    }
+  }
+  
+  /* line 36, src/assets/scss/_type.scss */
+  .display-3 {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 36, src/assets/scss/_type.scss */
+    .display-3 {
+      font-size: 4rem;
+    }
+  }
+  
+  /* line 36, src/assets/scss/_type.scss */
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 36, src/assets/scss/_type.scss */
+    .display-4 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  /* line 36, src/assets/scss/_type.scss */
+  .display-5 {
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 36, src/assets/scss/_type.scss */
+    .display-5 {
+      font-size: 3rem;
+    }
+  }
+  
+  /* line 36, src/assets/scss/_type.scss */
+  .display-6 {
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 36, src/assets/scss/_type.scss */
+    .display-6 {
+      font-size: 2.5rem;
+    }
+  }
+  
+
+   
+  /* line 7, src/assets/scss/_containers.scss */
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    /* line 20, src/assets/scss/_containers.scss */
+    .container, .container-sm {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* line 20, src/assets/scss/_containers.scss */
+    .container, .container-sm, .container-md {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* line 20, src/assets/scss/_containers.scss */
+    .container, .container-sm, .container-md, .container-lg {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* line 20, src/assets/scss/_containers.scss */
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    /* line 20, src/assets/scss/_containers.scss */
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      max-width: 1320px;
+    }
+  }
+  
+
+  
+  /* ##### FOR HEADER ONLY ############ */
+
+
+
+
+.nav-item
+{ margin-top: auto;
+margin-bottom: auto; 
+}
+.navbar {
+ 
+position: relative;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+  }
+.navbar > .container,
+.navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl 
+{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: inherit;
+    flex-wrap: inherit;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+@media (min-width: 992px) {
+/* line 159, src/assets/scss/_navbar.scss */
+.navbar-expand-lg {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/* line 164, src/assets/scss/_navbar.scss */
+.navbar-expand-lg .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/* line 167, src/assets/scss/_navbar.scss */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+}
+/* line 171, src/assets/scss/_navbar.scss */
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+/* line 177, src/assets/scss/_navbar.scss */
+.navbar-expand-lg .navbar-collapse {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/* line 181, src/assets/scss/_navbar.scss */
+.navbar-expand-lg .navbar-toggler {
+  display: none;
+}
+}
+/* line 196, src/assets/scss/_navbar.scss */
+.navbar-light .navbar-brand {
+color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 199, src/assets/scss/_navbar.scss */
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+color: rgba(0, 0, 0, 0.55);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-toggler {
+color: rgba(0, 0, 0, 0.55);
+border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-text {
+color: rgba(0, 0, 0, 0.55);
+}
+
+.navbar-light .navbar-text a,
+.navbar-light .navbar-text a:hover,
+.navbar-light .navbar-text a:focus {
+color: rgba(0, 0, 0, 0.9);
+}
+
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
+    transition: -webkit-box-shadow 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .navbar-toggler {
+      -webkit-transition: none;
+      transition: none;
+    }
+  }
+  
+  .navbar-toggler:hover {
+    text-decoration: none;
+  }
+  
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.25rem;
+            box-shadow: 0 0 0 0.25rem;
+  }
+  
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+
+  @media (min-width: 576px) {
+    .navbar-expand-sm {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+    }
+    .navbar-expand-sm .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+    .navbar-expand-sm .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-sm .navbar-collapse {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+    }
+    .navbar-expand-sm .navbar-toggler {
+      display: none;
+    }
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-collapse {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    .navbar-expand-md {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+    }
+    .navbar-expand-md .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-md .navbar-collapse {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+    }
+    .navbar-expand-md .navbar-toggler {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .navbar-expand-xl {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+    }
+    .navbar-expand-xl .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+    .navbar-expand-xl .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-xl .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-xl .navbar-collapse {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+    }
+    .navbar-expand-xl .navbar-toggler {
+      display: none;
+    }
+  }
+@media (min-width: 1400px) {
+.navbar-expand-xxl {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.navbar-expand-xxl .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.navbar-expand-xxl .navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.navbar-expand-xxl .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.navbar-expand-xxl .navbar-collapse {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.navbar-expand-xxl .navbar-toggler {
+  display: none;
+}
+}
+.navbar-expand .navbar-collapse {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.flex-fill {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
+}
+.d-lg-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.justify-content-lg-between {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+.mx-xl-5 {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
+}
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-nav .dropdown-menu {
+  position: static;
+}
+.navbar-expand .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.navbar-expand .navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff;
+}
+.px-3 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.navbar-text {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.navbar-expand .navbar-toggler {
+  display: none;
+}
+.navbar-dark .navbar-brand {
+  color: #fff;
+}
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  color: #fff;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-dark .navbar-text {
+  color: rgba(255, 255, 255, 0.55);
+}
+.navbar-dark .navbar-text a,
+.navbar-dark .navbar-text a:hover,
+.navbar-dark .navbar-text a:focus {
+  color: #fff;
+}
+.shadow {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.justify-content-between {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+.align-items-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+.align-self-center {
+  -ms-flex-item-align: center !important;
+      align-self: center !important;
+}
+.bg-light {
+  background-color: #f6f9fe !important;
+}
+.text-center {
+  text-align: center !important;
+}
+
+
+/* ###### FOOTER SPECIFIC ######*/ 
+
+
+.justify-content-between {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+
+
+  
+   
+  /* line 196, src/assets/scss/_navbar.scss */
+  .navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* line 199, src/assets/scss/_navbar.scss */
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  
+
+  .navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+
+   
+  /* line 247, src/assets/scss/_navbar.scss */
+  .navbar-dark .navbar-brand {
+    color: #fff;
+  }
+  
+  /* line 250, src/assets/scss/_navbar.scss */
+  .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+    color: #fff;
+  }
+
+
+    /* line 247, src/assets/scss/_navbar.scss */
+    .navbar-dark .navbar-brand {
+        color: #fff;
+      }
+      
+      /* line 250, src/assets/scss/_navbar.scss */
+      .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+        color: #fff;
+      }
+
+      .text-center {
+        text-align: center !important;
+      }
+      
+      
+  
+
+
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    
+<nav id="main_nav" class="navbar navbar-expand-lg navbar-light shadow">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand h1" routerLink="en-us/home">
+            <h4>RENZVOS</h4>
+        </a>
+        <button class="navbar-toggler border-0"  >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+            <div class="flex-fill mx-xl-5 mb-2">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                    <li class="nav-item">
+                        <app-bootstrap-outline-button text="Home" routerLink="en-us/home"></app-bootstrap-outline-button>
+
+                    </li>
+                    <li class="nav-item">
+                        <app-bootstrap-outline-button text="About Us" routerLink="en-us/about"></app-bootstrap-outline-button>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <app-bootstrap-outline-button text="Contact" routerLink="en-us/contact"></app-bootstrap-outline-button>
+                    </li>
+
+                    <li class="nav-item">
+                        <app-bootstrap-outline-button text="Pricing" routerLink="en-us/pricing"></app-bootstrap-outline-button>
+                    </li>
+
+                    <li class="nav-item">
+                        <app-bootstrap-round-solid-button text="Login" ></app-bootstrap-round-solid-button>
+                    </li>
+
+                </ul>
+            </div>
+  
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container">
+	
+
+    <div id="contact-page" class="container">
+            <div class="bg">
+                <div class="row">    		
+                    <div class="col-sm-12">    			   			
+                        <h2 class="title text-center"> <strong>PRIVACY POLICY</strong></h2>    			    				    				
+                        
+                    </div>			 		
+                </div>    	
+    
+    
+    <p style="text-align: left;"><br>Effective date: <span id="span_id_effective_date_w">December 10, 2030</span><br>Last updated on: <span id="span_id_date_of_update">December 14, 2020</span></p>
+    
+    <p><strong><br>1. GENERAL</strong></p>
+    <p style="text-align: left; padding-left: 30px;">a. This Application with the name of <span id="span_id_website_url">Battery Pro</span> ("Application") is operated by <span id="span_id_company_w">RENZVOS</span> ("We/Our/Us"). We are committed to protecting and respecting your privacy. We do not collect your personal information and process your personal data in accordance with the IT Act, 2000 (21 of 2000) and other national and state laws which relate the processing of personal data. Please read the following carefully to understand our views and practices regarding your personal data.</p>
+    <p style="text-align: left; padding-left: 30px;">b. We do not collect your personal information in order to provide and continually improve our products and services.</p>
+    <p style="text-align: left; padding-left: 30px;">c. Our privacy policy is subject to change at any time without notice. To make sure you are aware of any changes, please review this policy periodically.</p>
+    <p style="text-align: left; padding-left: 30px;">d. All partner firms and any third-party working with or for Us, and who have access to personal information, will be expected to read and comply with this policy. </p>
+    <p><strong><br>2. HOW WE COLLECT THE INFORMATION</strong></p>
+    <p style="text-align: left; padding-left: 30px;"> We do not collect any information regarding "Battery Pro" App </p>
+    <p><strong><br>3. INFORMATION WE COLLECT</strong></p>
+    <p style="text-align: left; padding-left: 30px;">We do not collect any information regarding "Battery Pro" App </p>
+    <p><strong>4. HOW WE USE INFORMATION</strong></p>
+    <p style="text-align: left; padding-left: 30px;">We do not use any information regarding "Battery Pro" App </p>
+  <p><strong><br>5. DATA TRANSFER</strong></p>
+    <p style="text-align: left; padding-left: 30px;">The current state of the app do not carry any analytic or cookies or advertising data</p>
+  <p><strong><br>6. DATA SECURITY</strong></p>
+    <p style="text-align: left; padding-left: 30px;">a. The Application is not able to access any data from the phone unless the permission is granted</p>
+    <p style="text-align: left; padding-left: 30px;">b. Data from the smartphone regarding battery is used only for displaying it to thier respective page / view in the application </p>
+<p style="text-align: left;"><strong><br>7. LINKS TO THIRD PARTY SITE/APPS</strong></p>
+    <p style="text-align: left; padding-left: 30px;">Our Site may, from time to time, contain links to and from other Applications of third parties. Please note that if you follow a link to any of these Applications, such Applications will apply different terms to the collection and privacy of your personal data and we do not accept any responsibility or liability for these policies. When you leave our Site, we encourage you to read the privacy policy of every Application you visit.</p>
+    <p><strong><br>8. SHARING OF PERSONAL INFORMATION</strong></p>
+    <p style="text-align: left; padding-left: 30px;">a. We do not collect any information regarding "Battery Pro" App</p>
+    <p><strong><br>9. CHILDREN</strong></p>
+    <p style="text-align: left; padding-left: 30px;">Our Apllication is rated for age (8-99)</p>
+    <p style="text-align: left; padding-left: 30px;">This application is considered as a tool for the battery status</p>
+    <p><strong><br>10. YOUR INFORMATION CHOICES AND CHANGES</strong></p>
+    <p style="text-align: left; padding-left: 30px;">We do not collect any information regarding "Battery Pro" App </p>
+    <p><br><strong>11. CHANGES TO THIS POLICY</strong></p>
+    <p style="text-align: left; padding-left: 30px;">We may change this policy from time to time. If we make any changes to this policy, we will change the "Last Updated" date above. You agree that your continued use of our services after such changes have been published to our services will constitute your acceptance of such revised policy. </p>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <p style="text-align: left; padding-left: 30px;"><br><strong>Contact Details:</strong></p>
+    <p style="text-align: left; padding-left: 30px;"><span style="white-space:pre-wrap;">
+        
+        <span id="span_id_contact_details" class="encours"><span class="variable_vide">arshad@renzvos.com</span></span></span></p>
+                        </div>
+    
+        
+                </div>
+    
+    
+    </div>
+    
+
+
+        <!-- Start Footer -->
+        <footer class="bg-secondary pt-4">
+            <div class="container">
+                <div class="row py-4">
+    
+                    <div class="col-lg-3 col-12 align-left">
+                        <a class="navbar-brand" routerLink="en-us/home">
+                            <i class='bx bx-buildings bx-sm text-light'></i>
+                            <span class="text-light h5">RENZVOS</span>
+                        </a>
+                        <p class="text-light my-lg-4 my-2">
+                            We believe not every change in technology is necessary, Since, The most hardest part in the company is wokforce and Efficiency. The best methods might provide More workforce and Less Efficiency. We have a strict balance between WorkForce, Efficiency and Customer Satisfaction.
+    
+                        </p>
+                        <ul class="list-inline footer-icons light-300">
+                            <li class="list-inline-item m-0">
+                                <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                    <i class='bx bxl-linkedin-square bx-md'></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item m-0">
+                                <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                    <i class='bx bxl-whatsapp-square bx-md'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+       
+    
+                   
+    
+                    <div class="col-lg-3 col-md-4 my-sm-0 mt-4 float-right" style="align-self: flex-end;text-align: end;">
+                        <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:0091956998665">0091956998665</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:cc@.com">cc@.com</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="w-100 bg-primary py-3">
+                <div class="container">
+                    <div class="row pt-2">
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="text-lg-start text-center text-light light-300">
+                                © Copyright 2021 RENZVOS. All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="text-lg-end text-center text-light light-300">
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
+        <!-- End Footer -->
+
+        
+
+
+
+</body>
+
+</html>
